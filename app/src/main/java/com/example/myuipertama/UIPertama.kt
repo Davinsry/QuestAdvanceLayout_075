@@ -69,6 +69,49 @@ fun AktvitasPertama(modifier: Modifier){
                 }
             }
         }
+// Memberi jarak
+        Spacer(modifier = Modifier.height(10.dp))
+        // Card ke dua
+
+        Card (modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )) {
+            Row (){
+                val gambar = painterResource( R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        "Isi Nama", // Teks diubah
+                        fontSize = 24.sp, // Ukuran font diubah
+                        fontWeight = FontWeight.Bold, // Dibuat tebal
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp) // Padding disesuaikan
+                    )
+                    Text(
+                        "Isi No Handphone", // Teks diubah
+                        fontSize = 18.sp, // Ukuran font diubah
+                        color = Color.White, // Warna diubah
+                        modifier = Modifier.padding(top=8.dp)
+                    )
+                    // Baris ketiga ditambahkan
+                    Text(
+                        "Isi Alamat",
+                        fontSize = 18.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=8.dp, bottom = 10.dp) // Padding disesuaikan
+                    )
+                }
+            }
+        }
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
