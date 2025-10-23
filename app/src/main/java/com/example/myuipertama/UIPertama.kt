@@ -25,20 +25,20 @@ fun AktvitasPertama(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = stringResource(id = R.string.prodi),
+        Text(  stringResource( R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
-        Text(text = stringResource(id = R.string.univ),
+        Text(  stringResource(id = R.string.univ),
             fontSize = 22.sp)
-        Spacer(modifier = Modifier.height(height = 25.dp))
+        Spacer(modifier = Modifier.height( 25.dp))
         Card (modifier = Modifier
-            .fillMaxWidth(fraction = 1f)
-            .padding(all = 12.dp),
+            .fillMaxWidth(1f)
+            .padding( 12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )) {
             row(){
-                val gambar = painterResource(id = R.drawable.logo_umy)
+                val gambar = painterResource( R.drawable.logo_umy)
             }
         }
     }
