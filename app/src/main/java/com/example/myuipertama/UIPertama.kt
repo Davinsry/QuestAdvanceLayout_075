@@ -112,6 +112,8 @@ fun AktvitasPertama(modifier: Modifier){
             }
         }
 
+
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
