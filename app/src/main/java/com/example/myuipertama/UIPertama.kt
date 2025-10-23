@@ -1,11 +1,15 @@
 package com.example.myuipertama
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -17,7 +21,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import java.lang.reflect.Modifier
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun AktvitasPertama(modifier: Modifier){
@@ -28,7 +32,7 @@ fun AktvitasPertama(modifier: Modifier){
         Text(  stringResource( R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
-        Text(  stringResource(id = R.string.univ),
+        Text(  stringResource(R.string.univ),
             fontSize = 22.sp)
         Spacer(modifier = Modifier.height( 25.dp))
         Card (modifier = Modifier
@@ -37,8 +41,19 @@ fun AktvitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )) {
-            row(){
+            Row (){
                 val gambar = painterResource( R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+
+                    )
+                }
             }
         }
     }
