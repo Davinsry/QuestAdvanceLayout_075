@@ -80,7 +80,7 @@ fun AktvitasPertama(modifier: Modifier){
                 containerColor = Color.Blue
             )) {
             Row (){
-                val gambar = painterResource( R.drawable.logo_umy)
+                val gambar = painterResource( R.drawable.bkantan)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -89,21 +89,21 @@ fun AktvitasPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
-                        "Isi Nama", // Teks diubah
+                        stringResource(R.string.nama2), // Teks diubah
                         fontSize = 24.sp, // Ukuran font diubah
                         fontWeight = FontWeight.Bold, // Dibuat tebal
                         color = Color.White,
                         modifier = Modifier.padding(top = 10.dp) // Padding disesuaikan
                     )
                     Text(
-                        "Isi No Handphone", // Teks diubah
+                        stringResource(R.string.no), // Teks diubah
                         fontSize = 18.sp, // Ukuran font diubah
                         color = Color.White, // Warna diubah
                         modifier = Modifier.padding(top=8.dp)
                     )
                     // Baris ketiga ditambahkan
                     Text(
-                        "Isi Alamat",
+                        stringResource(R.string.alamat2),
                         fontSize = 18.sp,
                         color = Color.White,
                         modifier = Modifier.padding(top=8.dp, bottom = 10.dp) // Padding disesuaikan
