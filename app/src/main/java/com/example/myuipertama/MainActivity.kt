@@ -21,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyUIPertamaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    AktvitasPertama(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
