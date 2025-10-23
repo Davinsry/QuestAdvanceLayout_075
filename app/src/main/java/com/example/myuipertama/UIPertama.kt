@@ -112,6 +112,51 @@ fun AktvitasPertama(modifier: Modifier){
             }
         }
 
+        Spacer(modifier = Modifier.height(10.dp))
+
+        // --- CARD 3 (HIJAU) - BARU ---
+        Card (modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding( 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Green // Warna diubah jadi Hijau
+            )) {
+            Row (){
+                val gambar = painterResource( R.drawable.mu)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama3),
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Black,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.no2),
+                        fontSize = 18.sp,
+                        color = Color.Black, // Warna diubah jadi Cyan (agar beda seperti di gambar)
+                        modifier = Modifier.padding(top=8.dp)
+                    )
+                    // Baris ketiga ditambahkan
+                    Text(
+                        stringResource(R.string.alamat3),
+                        fontSize = 18.sp,
+                        color = Color.Black,
+                        modifier = Modifier.padding(top=8.dp, bottom = 10.dp)
+                    )
+                }
+            }
+        }
+        // Spacer di akhir list
+        Spacer(modifier = Modifier.height(20.dp))
+    }
+
 
 
         Box(
@@ -126,4 +171,3 @@ fun AktvitasPertama(modifier: Modifier){
             )
         }
     }
-}
